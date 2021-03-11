@@ -4,8 +4,8 @@ import { View, Text } from 'react-native';
 export default function HomeComponent() {
     return (
         <View>
-            <Text>
-                Home Screen
+            <Text style={{alignSelf: 'center'}}>
+                Welcome to RevPedia!
             </Text>
         </View>
     )
