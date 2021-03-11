@@ -13,7 +13,7 @@ export default function BatckStackNavigator() {
             headerTitle: () => (
                 <View>
                     <Text style={{alignSelf: 'center'}}>
-                        Revapedia
+                        RevPedia
                     </Text>
                 </View>
             ),
