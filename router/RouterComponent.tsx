@@ -2,9 +2,9 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import BatchStackNavigator from './BatchStackNavigator';
-import HomeStackNavigator from './HomeStackNavigatort';
+import HomeStackNavigator from './HomeStackNavigator';
 import TrainerStackNavigator from './TrainerStackNavigator';
-import ManagerStackNavigator from './ManagerStackNavigatort';
+import ManagerStackNavigator from './ManagerStackNavigator';
 
 export default function RouterComponent() {
     const BottomTab = createBottomTabNavigator();

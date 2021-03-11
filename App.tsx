@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
+import style from '../globalStyles';
 import RouterComponent from './router/RouterComponent';
 
 export default function App() {

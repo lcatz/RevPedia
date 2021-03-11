@@ -12,8 +12,8 @@ export default function ManagerStackNavigator() {
         return {
             headerTitle: () => (
                 <View>
-                    <Text>
-                        RevaPedia
+                    <Text style={{alignSelf: 'center'}}>
+                        Revapedia
                     </Text>
                 </View>
             ),
