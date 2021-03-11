@@ -8,31 +8,46 @@ import TrainerDetailComponent from '../components/TrainerDetailComponent';
 const Stack = createStackNavigator();
 
 export default function TrainerStackNavigator() {
+  function headerOptions() {
+    return {
+      headerTitle: () => (
+        <View>
+          <Text
+            style={{
+              alignSelf: 'center',
+              color: 'white',
+              fontWeight: '900',
+              fontSize: 21,
+            }}>
+            RevPedia
+          </Text>
+        </View>
+      ),
+    };
+  }
 
-    function headerOptions() {
-        return {
-            headerTitle: () => (
-                <View>
-                    <Text style={{alignSelf: 'center'}}>
-                        RevPedia
-                    </Text>
-                </View>
-            ),
-        }
-    }
-
-    return (
-        <Stack.Navigator initialRouteName='TrainerList'>
-            <Stack.Screen
-                name='TrainerList'
-                component={TrainerListComponent}
-                options={headerOptions}
-            />
-            <Stack.Screen
-                name='TrainerDetail'
-                component={TrainerDetailComponent}
-                options={headerOptions}
-            />
-        </Stack.Navigator>
-    );
+  return (
+    <Stack.Navigator
+      initialRouteName='TrainerList'
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }}>
+      <Stack.Screen
+        name='TrainerList'
+        component={TrainerListComponent}
+        options={headerOptions}
+      />
+      <Stack.Screen
+        name='TrainerDetail'
+        component={TrainerDetailComponent}
+        options={headerOptions}
+      />
+    </Stack.Navigator>
+  );
 }

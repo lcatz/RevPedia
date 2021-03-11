@@ -8,31 +8,46 @@ import ManagerDetailComponent from '../components/ManagerDetailComponent';
 const Stack = createStackNavigator();
 
 export default function ManagerStackNavigator() {
+  function headerOptions() {
+    return {
+      headerTitle: () => (
+        <View>
+          <Text
+            style={{
+              alignSelf: 'center',
+              color: 'white',
+              fontWeight: '900',
+              fontSize: 21,
+            }}>
+            RevPedia
+          </Text>
+        </View>
+      ),
+    };
+  }
 
-    function headerOptions() {
-        return {
-            headerTitle: () => (
-                <View>
-                    <Text style={{alignSelf: 'center'}}>
-                        RevPedia
-                    </Text>
-                </View>
-            ),
-        }
-    }
-
-    return (
-        <Stack.Navigator initialRouteName='ManagerList'>
-            <Stack.Screen
-                name='ManagerList'
-                component={ManagerListComponent}
-                options={headerOptions}
-            />
-            <Stack.Screen
-                name='ManagerDetail'
-                component={ManagerDetailComponent}
-                options={headerOptions}
-            />
-        </Stack.Navigator>
-    );
+  return (
+    <Stack.Navigator
+      initialRouteName='ManagerList'
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }}>
+      <Stack.Screen
+        name='ManagerList'
+        component={ManagerListComponent}
+        options={headerOptions}
+      />
+      <Stack.Screen
+        name='ManagerDetail'
+        component={ManagerDetailComponent}
+        options={headerOptions}
+      />
+    </Stack.Navigator>
+  );
 }

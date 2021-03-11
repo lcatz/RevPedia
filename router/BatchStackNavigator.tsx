@@ -9,30 +9,46 @@ const Stack = createStackNavigator();
 
 export default function BatchStackNavigator() {
 
-    function headerOptions() {
-        return {
-            headerTitle: () => (
-                <View>
-                    <Text style={{alignSelf: 'center'}}>
-                        RevPedia
-                    </Text>
-                </View>
-            ),
-        }
-    }
+  function headerOptions() {
+    return {
+      headerTitle: () => (
+        <View>
+          <Text
+            style={{
+              alignSelf: 'center',
+              color: 'white',
+              fontWeight: '900',
+              fontSize: 21,
+            }}>
+            RevPedia
+          </Text>
+        </View>
+      ),
+    };
+  }
 
-    return (
-        <Stack.Navigator initialRouteName='BatchList'>
-            <Stack.Screen
-                name='BatchList'
-                component={BatchListComponent}
-                options={headerOptions}
-            />
-            <Stack.Screen
-                name='BatchDetail'
-                component={BatchDetailComponent}
-                options={headerOptions}
-            />
-        </Stack.Navigator>
-    );
+  return (
+    <Stack.Navigator
+      initialRouteName='BatchList'
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }}>
+      <Stack.Screen
+        name='BatchList'
+        component={BatchListComponent}
+        options={headerOptions}
+      />
+      <Stack.Screen
+        name='BatchDetail'
+        component={BatchDetailComponent}
+        options={headerOptions}
+      />
+    </Stack.Navigator>
+  );
 }
