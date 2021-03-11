@@ -1,0 +1,12 @@
+{
+  "name": "Revapediea",
+  "displayName": "Revapediea",
+  "expo": {
+    "name": "Revapediea",
+    "slug": "Revapediea",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
