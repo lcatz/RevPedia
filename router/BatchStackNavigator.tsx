@@ -8,7 +8,6 @@ import BatchDetailComponent from '../components/BatchDetailComponent';
 const Stack = createStackNavigator();
 
 export default function BatchStackNavigator() {
-
   function headerOptions() {
     return {
       headerTitle: () => (
@@ -19,6 +18,7 @@ export default function BatchStackNavigator() {
               color: 'white',
               fontWeight: '900',
               fontSize: 21,
+              fontFamily: 'AlfaSlabOne_400Regular',
             }}>
             RevPedia
           </Text>

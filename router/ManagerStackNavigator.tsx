@@ -18,6 +18,7 @@ export default function ManagerStackNavigator() {
               color: 'white',
               fontWeight: '900',
               fontSize: 21,
+              fontFamily: 'AlfaSlabOne_400Regular',
             }}>
             RevPedia
           </Text>
