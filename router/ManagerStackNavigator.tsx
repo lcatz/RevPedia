@@ -7,26 +7,40 @@ import ManagerListComponent from '../components/ManagerListComponent';
 const Stack = createStackNavigator();
 
 export default function ManagerStackNavigator() {
+  function headerOptions() {
+    return {
+      headerTitle: () => (
+        <View>
+          <Text
+            style={{
+              alignSelf: 'center',
+              color: 'white',
+              fontWeight: '900',
+              fontSize: 21,
+            }}>
+            Revapedia
+          </Text>
+        </View>
+      ),
+    };
+  }
 
-    function headerOptions() {
-        return {
-            headerTitle: () => (
-                <View>
-                    <Text style={{alignSelf: 'center'}}>
-                        Revapedia
-                    </Text>
-                </View>
-            ),
-        }
-    }
-
-    return (
-        <Stack.Navigator>
-            <Stack.Screen
-                name='Home'
-                component={ManagerListComponent}
-                options={headerOptions}
-            />
-        </Stack.Navigator>
-    );
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }}>
+      <Stack.Screen
+        name='Home'
+        component={ManagerListComponent}
+        options={headerOptions}
+      />
+    </Stack.Navigator>
+  );
 }
