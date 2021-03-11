@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "RevPedia.Domain/1.0.0": {
+        "runtime": {
+          "RevPedia.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RevPedia.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

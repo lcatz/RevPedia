@@ -1,0 +1,12 @@
+/home/lawrence/revature/RevPedia/RevPedia.Domain/bin/Debug/net5.0/RevPedia.Domain.deps.json
+/home/lawrence/revature/RevPedia/RevPedia.Domain/bin/Debug/net5.0/RevPedia.Domain.dll
+/home/lawrence/revature/RevPedia/RevPedia.Domain/bin/Debug/net5.0/ref/RevPedia.Domain.dll
+/home/lawrence/revature/RevPedia/RevPedia.Domain/bin/Debug/net5.0/RevPedia.Domain.pdb
+/home/lawrence/revature/RevPedia/RevPedia.Domain/obj/Debug/net5.0/RevPedia.Domain.csprojAssemblyReference.cache
+/home/lawrence/revature/RevPedia/RevPedia.Domain/obj/Debug/net5.0/RevPedia.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/lawrence/revature/RevPedia/RevPedia.Domain/obj/Debug/net5.0/RevPedia.Domain.AssemblyInfoInputs.cache
+/home/lawrence/revature/RevPedia/RevPedia.Domain/obj/Debug/net5.0/RevPedia.Domain.AssemblyInfo.cs
+/home/lawrence/revature/RevPedia/RevPedia.Domain/obj/Debug/net5.0/RevPedia.Domain.csproj.CoreCompileInputs.cache
+/home/lawrence/revature/RevPedia/RevPedia.Domain/obj/Debug/net5.0/RevPedia.Domain.dll
+/home/lawrence/revature/RevPedia/RevPedia.Domain/obj/Debug/net5.0/ref/RevPedia.Domain.dll
+/home/lawrence/revature/RevPedia/RevPedia.Domain/obj/Debug/net5.0/RevPedia.Domain.pdb
