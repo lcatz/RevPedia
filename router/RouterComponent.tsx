@@ -1,44 +1,31 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import HomeComponent from '../components/HomeComponent';
-import TrainerListComponent from '../components/TrainerListComponent';
-import ManagerListComponent from '../components/ManagerListComponent';
-import BatchListComponent from '../components/BatchListComponent';
+import BatchStackNavigator from './BatchStackNavigator';
+import HomeStackNavigator from './HomeStackNavigatort';
+import TrainerStackNavigator from './TrainerStackNavigator';
+import ManagerStackNavigator from './ManagerStackNavigatort';
 
 export default function RouterComponent() {
     const BottomTab = createBottomTabNavigator();
-
-    function headerOptions() {
-        return {
-            headerTitle: () => (
-                <View>
-                    <Text>
-                        RevaPedia
-                    </Text>
-                </View>
-            ),
-        }
-    }
 
     return (
         <BottomTab.Navigator initialRouteName='Home'>
             <BottomTab.Screen
                 name='Home'
-                component={HomeComponent}
+                component={HomeStackNavigator}
             />
             <BottomTab.Screen
                 name='Trainers'
-                component={TrainerListComponent}
+                component={TrainerStackNavigator}
             />
             <BottomTab.Screen
                 name='Managers'
-                component={ManagerListComponent}
+                component={ManagerStackNavigator}
             />
             <BottomTab.Screen
                 name='Batches'
-                component={BatchListComponent}
+                component={BatchStackNavigator}
             />
         </BottomTab.Navigator>
     )
