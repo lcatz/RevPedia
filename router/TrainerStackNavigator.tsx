@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import TrainerListComponent from '../components/TrainerListComponent';
+import TrainerDetailComponent from '../components/TrainerDetailComponent';
 
 const Stack = createStackNavigator();
 
@@ -21,10 +22,15 @@ export default function TrainerStackNavigator() {
     }
 
     return (
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName='TrainerList'>
             <Stack.Screen
-                name='Home'
+                name='TrainerList'
                 component={TrainerListComponent}
+                options={headerOptions}
+            />
+            <Stack.Screen
+                name='TrainerDetail'
+                component={TrainerDetailComponent}
                 options={headerOptions}
             />
         </Stack.Navigator>

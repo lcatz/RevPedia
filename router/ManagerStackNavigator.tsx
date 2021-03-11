@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import ManagerListComponent from '../components/ManagerListComponent';
+import ManagerDetailComponent from '../components/ManagerDetailComponent';
 
 const Stack = createStackNavigator();
 
@@ -21,10 +22,15 @@ export default function ManagerStackNavigator() {
     }
 
     return (
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName='ManagerList'>
             <Stack.Screen
-                name='Home'
+                name='ManagerList'
                 component={ManagerListComponent}
+                options={headerOptions}
+            />
+            <Stack.Screen
+                name='ManagerDetail'
+                component={ManagerDetailComponent}
                 options={headerOptions}
             />
         </Stack.Navigator>

@@ -2,8 +2,10 @@ import React from 'react';
 import { View, Text, Pressable } from 'react-native';
 import { Card } from 'react-native-elements';
 import { FlatList } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 
 export default function BatchListComponent() {
+    const nav = useNavigation();
     const keyExtractor = (item: object, index: number) => {
         return index.toString();
     };
@@ -57,7 +59,7 @@ export default function BatchListComponent() {
     };
 
     function handleBatchSelect(batch: any) {
-        console.log(batch);
+        nav.navigate('BatchDetail', { batch: batch });
     }
 
     return (

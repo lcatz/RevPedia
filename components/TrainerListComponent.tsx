@@ -2,8 +2,10 @@ import React from 'react';
 import { View, Text, Pressable } from 'react-native';
 import { Card } from 'react-native-elements';
 import { FlatList } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 
 export default function TrainerListComponent() {
+    const nav = useNavigation();
     const keyExtractor = (item: object, index: number) => {
         return index.toString();
     };
@@ -35,8 +37,6 @@ export default function TrainerListComponent() {
     ]
 
     const trainerCard = (params: any) => {
-        console.log(params);
-
         return (
             <Pressable onPress={() => handleTrainerSelect(params.item)}>
                 <Card>
@@ -47,7 +47,7 @@ export default function TrainerListComponent() {
     };
 
     function handleTrainerSelect(trainer: any) {
-        console.log(trainer);
+        nav.navigate('TrainerDetail', { trainer: trainer });
     }
 
     return (

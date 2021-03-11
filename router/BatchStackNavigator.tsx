@@ -3,10 +3,11 @@ import { View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import BatchListComponent from '../components/BatchListComponent';
+import BatchDetailComponent from '../components/BatchDetailComponent';
 
 const Stack = createStackNavigator();
 
-export default function BatckStackNavigator() {
+export default function BatchStackNavigator() {
 
     function headerOptions() {
         return {
@@ -21,10 +22,15 @@ export default function BatckStackNavigator() {
     }
 
     return (
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName='BatchList'>
             <Stack.Screen
-                name='Home'
+                name='BatchList'
                 component={BatchListComponent}
+                options={headerOptions}
+            />
+            <Stack.Screen
+                name='BatchDetail'
+                component={BatchDetailComponent}
                 options={headerOptions}
             />
         </Stack.Navigator>

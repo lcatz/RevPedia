@@ -2,8 +2,10 @@ import React from 'react';
 import { View, Text, Pressable } from 'react-native';
 import { Card } from 'react-native-elements';
 import { FlatList } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 
 export default function ManagerListComponent() {
+    const nav = useNavigation();
     const keyExtractor = (item: object, index: number) => {
         return index.toString();
     };
@@ -30,7 +32,7 @@ export default function ManagerListComponent() {
     };
 
     function handleManagerSelect(manager: any) {
-        console.log(manager);
+        nav.navigate('ManagerDetail', {  manager: manager });
     }
 
     return (
