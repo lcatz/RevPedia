@@ -12,27 +12,35 @@ export default function TrainerListComponent() {
     const trainers = [
         {
             name: 'Trainer 1',
+            email: 'trainer1@revature.net'
         },
         {
-            name: 'Trainer 2'
+            name: 'Trainer 2',
+            email: 'trainer2@revature.net'
         },
         {
-            name: 'Trainer 3'
+            name: 'Trainer 3',
+            email: 'trainer3@revature.net'
         },
         {
-            name: 'Trainer 4'
+            name: 'Trainer 4',
+            email: 'trainer4@revature.net'
         },
         {
-            name: 'Trainer 5'
+            name: 'Trainer 5',
+            email: 'trainer5@revature.net'
         },
         {
-            name: 'Trainer 6'
+            name: 'Trainer 6',
+            email: 'trainer6@revature.net'
         },
         {
-            name: 'Trainer 7'
+            name: 'Trainer 7',
+            email: 'trainer7@revature.net'
         },
         {
-            name: 'Trainer 8'
+            name: 'Trainer 8',
+            email: 'trainer8@revature.net'
         }
     ]
 

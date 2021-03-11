@@ -18,7 +18,7 @@ export default function HomeStackNavigator() {
               fontWeight: '900',
               fontSize: 21,
             }}>
-            Revapedia
+            RevPedia
           </Text>
         </View>
       ),

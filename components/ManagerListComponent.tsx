@@ -12,12 +12,15 @@ export default function ManagerListComponent() {
     const managers = [
         {
             name: 'Manager 1',
+            email: 'manager1@revature.net'
         },
         {
-            name: 'Manager 2'
+            name: 'Manager 2',
+            email: 'manager2@revature.net'
         },
         {
-            name: 'Manager 3'
+            name: 'Manager 3',
+            email: 'manager3@revature.net'
         }
     ]
 

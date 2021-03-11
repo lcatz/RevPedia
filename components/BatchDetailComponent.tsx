@@ -5,7 +5,8 @@ export default function BatchDetailComponent({ route }: any) {
     return (
         <View>
             <Text>
-                {route.params.batch.name}
+                {'Name: ' + route.params.batch.name + '\n' +
+                'Skill: ' + route.params.batch.skill}
             </Text>
         </View>
     )

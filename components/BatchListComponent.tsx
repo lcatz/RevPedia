@@ -12,39 +12,51 @@ export default function BatchListComponent() {
     const batches = [
         {
             name: 'Batch 1',
+            skill: 'Java/Microservices'
         },
         {
-            name: 'Batch 2'
+            name: 'Batch 2',
+            skill: '.NET'
         },
         {
-            name: 'Batch 3'
+            name: 'Batch 3',
+            skill: 'Big Data'
         },
         {
-            name: 'Batch 4'
+            name: 'Batch 4',
+            skill: 'Java/Automation'
         },
         {
-            name: 'Batch 5'
+            name: 'Batch 5',
+            skill: 'Cloud Native React'
         },
         {
-            name: 'Batch 6'
+            name: 'Batch 6',
+            skill: 'Java/Automation'
         },
         {
-            name: 'Batch 7'
+            name: 'Batch 7',
+            skill: 'Java/Microservices'
         },
         {
-            name: 'Batch 8'
+            name: 'Batch 8',
+            skill: '.NET'
         },
         {
-            name: 'Batch 9'
+            name: 'Batch 9',
+            skill: 'Python'
         },
         {
-            name: 'Batch 10'
+            name: 'Batch 10',
+            skill: 'Big Data'
         },
         {
-            name: 'Batch 11'
+            name: 'Batch 11',
+            skill: 'Cloud Native React'
         },
         {
-            name: 'Batch 12'
+            name: 'Batch 12',
+            skill: 'Java/Automation'
         }
     ]
 

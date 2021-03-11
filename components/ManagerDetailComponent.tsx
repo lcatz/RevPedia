@@ -5,7 +5,8 @@ export default function ManagerDetailComponent({ route }: any) {
     return (
         <View>
             <Text>
-                {route.params.manager.name}
+                {'Name: ' + route.params.manager.name + '\n' + 
+                'Email: ' + route.params.manager.email}
             </Text>
         </View>
     )

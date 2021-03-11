@@ -5,7 +5,8 @@ export default function TrainerDetailComponent({ route }: any) {
     return (
         <View>
             <Text>
-                {route.params.trainer.name}
+                {'Name: ' + route.params.trainer.name + '\n' + 
+                'Email: ' + route.params.trainer.email}
             </Text>
         </View>
     )
